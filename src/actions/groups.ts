@@ -10,7 +10,7 @@ import { onAuthenticatedUser } from "./auth"
 export const onGetAffiliateInfo = async (id: string) => {
   try {
     const affiliateInfo = await client.affiliate.findUnique({
-      where: {
+      where: {  
         id,
       },
       select: {
